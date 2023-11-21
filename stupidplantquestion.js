@@ -21,6 +21,9 @@ const myPlants = [
   
   console.log(secondTree);
   console.log();
+
+  console.log("hahahah");
   
+
   
   
