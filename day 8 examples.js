@@ -15,14 +15,14 @@ var contacts = [
 
 function lookUpProfile(name, prop) {
   // Iterate through the contacts array
-  for (var i = 0; i < contacts.length; i++) {
+  for ( i = 0; i < contacts.length; i++) {
 
     // Check if the current contact's firstName matches the provided name
     if (contacts[i].firstName === name) {
 
       // Check if the contact has the specified property (prop)
       if (contacts[i][prop] !== undefined) {
-        
+
         // If both conditions are true, return the value of the property
         return contacts[i][prop];
       } else {

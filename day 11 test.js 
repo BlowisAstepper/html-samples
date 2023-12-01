@@ -1,0 +1,26 @@
+function pairElement(str) {
+    // Define the base pair mappings
+    const pairMap = {
+      'A': 'T',
+      'T': 'A',
+      'C': 'G',
+      'G': 'C'
+    };
+  
+    // Create an array to store the result
+    const result = [];
+  
+    // Iterate through each character in the input string
+    for (let char of str) {
+      // Create a pair array and push it to the result array
+      result.push([char, pairMap[char]]);
+    }
+  
+    return result;
+  }
+  
+  // Example usage
+  const result = pairElement("GCG");
+  console.log(result);
+  // Output: [["G", "C"], ["C", "G"], ["G", "C"]]
+  
